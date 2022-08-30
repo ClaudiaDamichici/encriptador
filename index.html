@@ -4,31 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width">
-  <title>Encriptador</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css" />
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Encriptador</title>
 </head>
 
 <body>
   <header>
     <img id="logo" src="/img/logoEncriptador.png" alt="Logo encriptador">
+    <h1>Encriptador</h1>
   </header>
   <main>
    <section>
-      <textarea class="textoIngresado" cols="50" rows="17" placeholder="Ingrese el texto aqui"></textarea>
+      <textarea class="textoIngresado" cols="60" rows="17" placeholder="Ingrese el texto aqui"></textarea>
       <div>
         <button class="encriptar" onclick="btnEncriptador()">Encriptar</button>
         <button class="desencriptar" onclick="btnDesencriptador()">Desencriptar</button>
       </div>
     </section>
    <section>
-    <textarea class="mensaje" cols="30" rows="17"></textarea>
+    <textarea class="mensaje" cols="40" rows="17"></textarea>
     <div>
       <button class="copiar" onclick="copiar()">Copiar</button>
     </div>
   </section>
 </main>
+<footer>
+  <p>Creado por Claudia Andrea D'Amichici</p>
+</footer>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="index.js"></script>
 </body>
