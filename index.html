@@ -5,12 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width">
   <title>Encriptador</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css" />
   
 </head>
 
 <body>
- 
+  <header>
+    <img id="logo" src="/img/logoEncriptador.png" alt="Logo encriptador">
+  </header>
+  <main>
+   <section class="sectionEncriptador">
+      <textarea class="textoIngresado" cols="50" rows="17" placeholder="Ingrese el texto aqui"></textarea>
+      <div>
+        <button class="encriptar" onclick="btnEncriptador()">Encriptar</button>
+        <button class="desencriptar" onclick="btnDesencriptador()">Desencriptar</button>
+      </div>
+    </section>
+   <section class="sectionMensaje">
+    <textarea class="mensaje" cols="30" rows="17"></textarea>
+    <div>
+      <button class="copiar" onclick="copiar()">Copiar</button>
+    </div>
+  </section>
+</main>
+<script src="index.js"></script>
 </body>
+
 
 </html>
