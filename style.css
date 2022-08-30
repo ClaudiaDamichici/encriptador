@@ -1,9 +1,8 @@
 body{
     margin-top: 70px;
-
     background-color: #5ffffe;
     background-image: linear-gradient(45deg, #5ffffe 0%, #2b9fff 28%, #171a21 84%);
-    
+    background: cover;
 }
 
 #logo{
@@ -13,27 +12,45 @@ body{
 
 main{
     display: flex;
-    width: 80%;
-    height: 650px;
-}
+    width: 90%;
+    
 
-.sectionEncriptador{
-   
+}
+section{
     margin: 15px 0;
     padding: 20px;
 }
+section div{
+    display: flex;
+    
+    justify-content: center;
+}
+
+textarea{
+    margin: 15px;
+}
 
 .mensaje{
-    margin: 15px;
-   
+    position: relative;
     border-radius: 15px;
     padding: 5px;
     background-image: url(/img/encripador.png);
 }
 
+button{
+    background: blue;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin: 5px;
+    transition-duration: 0.4s;
+    width: 40%;
+}
 
+button:hover{
+    background-color: white; 
+    color: blue;
+  }
 
-/*
-.mensaje{
-    
-}*/
+button
+

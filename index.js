@@ -2,9 +2,9 @@ const textoIngresado = document.querySelector(".textoIngresado");
 const mensaje = document.querySelector(".mensaje");
 
 function btnEncriptador(){
-    const TextoEncriptado = encriptar(textoIngresado.value)
-    mensaje.value = TextoEncriptado;
-    mensaje.getElementsByClassName.backgroundImage = "none";
+    const textoEncriptado = encriptar(textoIngresado.value)
+    mensaje.value = textoEncriptado;
+    mensaje.style.backgroundImage = "none";
     textoIngresado.value = ""
 }
 
@@ -22,10 +22,9 @@ function encriptar(stringEncriptado){
 
 
 function btnDesencriptador(){
-    const TextoEncriptado = desencriptar(textoIngresado.value)
-    mensaje.value = TextoEncriptado;
-    mensaje.getElementsByClassName.backgroundImage = "none";
-    textoIngresado.value = ""
+    const textoEncriptado = desencriptar(textoIngresado.value)
+    mensaje.value = textoEncriptado;
+    textoIngresado.value = "";
 }
 
 function desencriptar(stringDesencriptado){
@@ -44,6 +43,13 @@ function copiar(){
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    alert("Texto Copiado")
+    //alert("Texto Copiado");
+    Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: '¡Texto Copiado!',
+    showConfirmButton: false,
+    timer: 1500
+})
 }
 
